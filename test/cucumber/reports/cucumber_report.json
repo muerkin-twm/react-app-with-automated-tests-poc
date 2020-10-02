@@ -1,0 +1,71 @@
+[
+  {
+    "description": "    As a user\n    I can submit the form",
+    "elements": [
+      {
+        "description": "",
+        "id": "sample-form;user-can-submit-the-form",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User can submit the form",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the sample form page",
+            "match": {
+              "location": "test/cucumber/features/step_definitions/setup.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters email and password, and submit",
+            "match": {
+              "location": "test/cucumber/features/step_definitions/action.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 525000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should see an alert box",
+            "match": {
+              "location": "test/cucumber/features/step_definitions/assertion.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sample-form",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sample Form",
+    "tags": [],
+    "uri": "test/cucumber/features/sampleForm.feature"
+  }
+]

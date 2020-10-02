@@ -14,7 +14,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:jest": "jest --passWithNoTests",
+    "clean": "rm -rf ./node_modules package-lock.json && npm install",
+    "test:jest": "jest",
+    "test:playwright": "jest -c jest-playwright.config.js",
+    "test:playwright:local": "JEST_PLAYWRIGHT_CONFIG=jest-playwright.local.config.js jest -c jest-playwright.config.js",
+    "test:playwright:dev": "JEST_PLAYWRIGHT_CONFIG=jest-playwright.dev.config.js jest -c jest-playwright.config.js",
+    "test:cucumber": "cucumber-js test/cucumber/features --require-module @babel/register --require-module @babel/polyfill -f json:test/cucumber/reports/cucumber_report.json",
+    "test:cucumber:report": "node test/cucumber/reports/report.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,9 +41,15 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/polyfill": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
-    "babel-jest": "^26.3.0",
-    "jest": "^26.4.2"
+    "@babel/register": "^7.11.5",
+    "chai": "^4.2.0",
+    "cucumber": "^7.0.0-rc.0",
+    "cucumber-html-reporter": "^5.2.0",
+    "jest-playwright": "0.0.1",
+    "jest-playwright-preset": "^1.3.1",
+    "playwright": "^1.4.2"
   },
   "jest": {
     "transform": {
