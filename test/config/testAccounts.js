@@ -6,7 +6,7 @@ module.exports = {
   },
   userData: {
     [MURAD]: {
-      password: 'very-complication-password-123',
+      password: 'very-complicated-password-123',
     },
   },
   timeout: 60000,

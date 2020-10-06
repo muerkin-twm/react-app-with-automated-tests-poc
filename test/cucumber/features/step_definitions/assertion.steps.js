@@ -6,6 +6,6 @@ const {
 
 Then(/^the user should see an alert box$/, async () => {
   await expectTitleToEqual('React App Testing POC');
-  const expectedMessage = `Submitting form\nEmail: murad@totalwine.com\nPassword: very-complication-password-123\nOpps, just shared your password with everyone watching :)`;
+  const expectedMessage = `Submitting form\nEmail: murad@totalwine.com\nPassword: very-complicated-password-123\nOpps, just shared your password with everyone watching :)`;
   await expectAlertWithMessageToPresent(expectedMessage);
 });

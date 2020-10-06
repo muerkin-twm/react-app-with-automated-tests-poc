@@ -27,26 +27,39 @@
             },
             "result": {
               "status": "passed",
-              "duration": 309000000
+              "duration": 317000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the api is ready",
+            "match": {
+              "location": "test/cucumber/features/step_definitions/api.action.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 8,
             "name": "the user enters email and password, and submit",
             "match": {
               "location": "test/cucumber/features/step_definitions/action.steps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 533000000
+              "duration": 536000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 9,
             "name": "the user should see an alert box",
             "match": {
               "location": "test/cucumber/features/step_definitions/assertion.steps.js:7"

@@ -24,3 +24,5 @@ yarn-error.log*
 
 # test output
 /test/cucumber/reports/screenShots/*
+/test/cucumber/reports/cucumber_report.json
+/test/cucumber/reports/cucumber_report.html
